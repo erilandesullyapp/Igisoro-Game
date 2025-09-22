@@ -603,4 +603,36 @@ const IgisoroGame = () => {
 
       {/* About Modal */}
       <Modal isOpen={showAbout} onClose={() => setShowAbout(false)} title="About Igisoro">
-        <div className="space-y-4 text-sm
+        <div className="space-y-4 text-sm text-gray-700">
+        <p>
+            <strong>Igisoro</strong> is one of the oldest games on Earth, played in Egypt centuries before Christ. 
+            In Rwanda, igisoro boards engraved on rocks are attributed to King Ruganzu (1510-1543).
+          </p>
+          
+          <p>
+            This digital version follows the traditional Rwandan rules, preserving the authentic gameplay 
+            that has been passed down through generations.
+          </p>
+          
+          <div>
+            <h3 className="font-bold text-amber-900 mb-2">Cultural Significance:</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Ancient strategy game with deep cultural roots in Rwanda</li>
+              <li>Traditionally played with seeds or pebbles called "agasoro" or "inka" (cows)</li>
+              <li>Part of the larger Mancala family of games found across Africa</li>
+              <li>Teaches strategic thinking and mathematical concepts</li>
+            </ul>
+          </div>
+          
+          <div className="bg-amber-50 p-3 rounded-lg border border-amber-200">
+            <p className="text-xs text-amber-800">
+              This game is created with respect for Rwandan cultural heritage and traditional gameplay rules.
+            </p>
+          </div>
+        </div>
+      </Modal>
+    </div>
+  );
+};
+
+export default IgisoroGame;
